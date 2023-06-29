@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(
+        to bottom,
+        #95d3c8 0%,
+        #a1d8ce 50%,
+        #adddd4 70%,
+        #b8e2da 80%,
+        #c4e7e0 90%,
+        #d0ebe6 100%
+      );
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Nav bar styling */
+
+.navbar {
+    background: linear-gradient(to bottom, #8acfc2 0%,#95d3c8 100%);
+}
+
+.rot{
+    -webkit-transition: -webkit-transform 1s;
+}
+.rot:hover{
+    -webkit-transform: rotate(360deg) translateZ(0);
+}
+.nav-link {
+    font-family: 'Lato', sans-serif;
+    font-size: 28px;
+    font-weight: 900;
+    text-decoration: none;
+    background: linear-gradient(to right, #333333 50%, #a7b8fc 50%, #96a5e2 50%, #8593c9);
+    
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.5s ease-out;
+}
+.nav-link:hover {
+    background-position: -100%;
+}
+.navbar-text {
+    font-size: 12px;
+    font-weight: 600;
+    font-style: italic;
+    color: black;
+    background-color: white;
+    border: solid 1.5px;
+    border-radius: 8px;
+    padding: 0 10px 0 10px;
+}
+.navbar-toggler {
+    display: inline-flex;
+    color: #8acfc2;
+    cursor: pointer;
+}
+
+/* .navbar-toggler:active {
+    background-color: #8acfc2;
+    border-color: #8acfc2;
+} */
+
+.navbar-toggler:focus,
+  .navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+  }
+
+ion-icon[name="apps-outline"] {
+    color: #333333;
+}
+
+/* Body of index page styling */
+.container {
+    padding-top: 20px;
+    background-color: #e7f5f2;
+    width: 100%;
+    border: solid 2px;
+    border-radius: 5px;
+}
+.section {
+    padding: 5px 10px 5px 10px;
+    height: fit-content;
+    background-color: #8acfc2;
+    margin: 0px 20px 30px 20px;
+    border: solid 1px;
+    border-radius: 5px;
+}
+#header-text {
+    margin: 0 80px 10px 80px;
+    /* background-color: #a1d8ce; */
+    text-align: center;
+}
+
+#header-text h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 52px;
+    /* letter-spacing: 2px; */
+    color: #333333;
+}
+#header-text p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    /* letter-spacing: 2px; */
+    color: #333333;
+}
+
+
+h3 {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-weight: 600;
+    color: #333333;
+}
+
+
+.text {
+    /* margin-top: -30px; */
+    /* text-indent: 2em; */
+    font-weight: 600;
+    /* font-style: italic; */
+    color: #333333;
+}
+
+.text a {
+  text-decoration: none;
+  color: #333333;
+}
+.social {
+    width: 60px; 
+    height: 60px; 
+    margin-right: 5px; 
+    color: #333333;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+#image {
+    margin-top: 90px;
+}
+
+
+
+/* ----------------- */
+
+::selection {
+    background-color: #8593c9; /* Set the background color for selected text */
+    color: #e7f5f2; /* Set the text color for selected text */
+  }
+  
+  ::-moz-selection {
+    background-color: #8593c9; /* Set the background color for selected text in Firefox */
+    color: #e7f5f2; /* Set the text color for selected text in Firefox */
+  }
+
+  
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    padding: 0 300px;
+  }
+  
+  .gallery .image-container {
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    height: 225px; /* Set a fixed height for the images */
+  }
+  
+  .gallery img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery img:hover {
+    transform: scale(0.9);
+  }
+  
+  .gallery .description-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .gallery .image-container:hover .description-overlay {
+    opacity: 1;
+  }
+  
+  .gallery .description-overlay p {
+    margin: 0;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+
+@media (max-width: 1000px) {
+/* Apply styles for screens with a maximum width of 768px */
+
+.gallery .image-container {
+    width: 250px;
+    height: 187.5px; /* Set a fixed height for the images */
+  }
+.gallery {
+    /* grid-template-columns: repeat(1, 1fr);  */
+    grid-gap: 10px;
+    padding: 0 100px;
+}
+
+  
+}
+
+@media (max-width: 820px) {
+/* Apply styles for screens with a maximum width of 480px */
+.gallery .image-container {
+    width: 200px;
+    height: 150px; /* Set a fixed height for the images */
+  }
+.gallery {
+    /* grid-template-columns: repeat(1, 1fr);  */
+    padding: 0 20px; 
+    grid-gap: 5px;
+    /* padding: 0 100px; */
+}
+  #header-text h1 {
+    font-size: 42px;
+
+
+}
+
+@media (max-width: 640px) {
+    /* Apply styles for screens with a maximum width of 480px */
+    .gallery .image-container {
+        width: 150px;
+        height: 112.5px; /* Set a fixed height for the images */
+      }
+    .gallery {
+        /* grid-template-columns: repeat(1, 1fr);  */
+        padding: 0 10px; 
+        grid-gap: 5px;
+    }
+    
+    }
+
+@media (max-width: 420px) {
+  /* Apply styles for screens with a maximum width of 480px */
+  .gallery .image-container {
+      width: 100px;
+      height: 75px; /* Set a fixed height for the images */
+    }
+  .gallery {
+      /* grid-template-columns: repeat(1, 1fr);  */
+      padding: 0 10px; 
+      grid-gap: 5px;
+  }
+  
+  }
+
+
+@media (max-width: 380px) {
+  /* Apply styles for screens with a maximum width of 480px */
+  .gallery .image-container {
+      width: 80px;
+      height: 60px; /* Set a fixed height for the images */
+    }
+  .gallery {
+      /* grid-template-columns: repeat(1, 1fr);  */
+      padding: 0 10px; 
+      grid-gap: 5px;
+    }
+    
+}
