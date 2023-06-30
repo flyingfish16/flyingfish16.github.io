@@ -18,6 +18,7 @@ html, body {
 
 body {
     overflow-x: hidden;
+    /* overflow-y: scroll; */
     margin: 0;
     padding: 0;
     background: linear-gradient(
@@ -127,6 +128,9 @@ ion-icon[name="apps-outline"] {
     font-size: 18px;
     /* letter-spacing: 2px; */
     color: #333333;
+    @media (max-width: 600px) {
+      font-size: 14px;
+    }
 }
 
 
@@ -139,12 +143,21 @@ h3 {
 
 
 .text {
+    text-align: justify;
+    /* text-align-last: justify; */
+    text-justify: inter-word;
     /* margin-top: -30px; */
     /* text-indent: 2em; */
     font-weight: 600;
     /* font-style: italic; */
     color: #333333;
+      /* Media query for phone mode or smaller screens */
+    /* @media (max-width: 767px) {
+      font-size: 4vw;
+  } */
 }
+
+
 
 .text a {
   text-decoration: none;
@@ -160,6 +173,8 @@ h3 {
     align-items: center;
 
   }
+
+
 
 .icon {
     display: flex;
