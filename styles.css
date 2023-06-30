@@ -143,18 +143,8 @@ h3 {
 
 
 .text {
-    text-align: justify;
-    /* text-align-last: justify; */
-    text-justify: inter-word;
-    /* margin-top: -30px; */
-    /* text-indent: 2em; */
     font-weight: 600;
-    /* font-style: italic; */
     color: #333333;
-      /* Media query for phone mode or smaller screens */
-    /* @media (max-width: 767px) {
-      font-size: 4vw;
-  } */
 }
 
 
@@ -199,7 +189,6 @@ h3 {
     color: #e7f5f2; /* Set the text color for selected text in Firefox */
   }
 
-  
   
   .gallery {
     display: grid;
@@ -328,4 +317,13 @@ h3 {
       grid-gap: 5px;
     }
     
+}
+
+
+@media (max-width: 767px) {
+  body {
+    overscroll-behavior-y: contain;
+    overscroll-behavior-x: contain;
+    background-color: #8acfc2;
+  }
 }
