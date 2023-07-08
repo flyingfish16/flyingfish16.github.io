@@ -108,11 +108,6 @@ const imageSets = [[
     timestamp: new Date('Apr 21, 2019').getTime()
   },
   {
-    url: 'https://i.imgur.com/EpNDXW6.jpg',
-    description: 'Lancaster University, May 2019.',
-    timestamp: new Date('May 4, 2019').getTime()
-  },
-  {
     url: 'https://i.imgur.com/6KrABzP.jpg',
     description: 'Lancaster University, May 2019.',
     timestamp: new Date('May 13, 2019').getTime()
@@ -263,7 +258,7 @@ const imageSets = [[
     timestamp: new Date('Jan 3, 2020').getTime()
   },
   {
-    url: 'https://i.imgur.com/C5HPU3n.jpg',
+    url: 'https://i.imgur.com/0VRdbe9.jpg',
     description: 'Lancsater University, Jun 2018.',
     timestamp: new Date('Jun 22, 2018').getTime()
   },
