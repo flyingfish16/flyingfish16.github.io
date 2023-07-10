@@ -342,3 +342,34 @@ h3 {
     background-color: #8acfc2;
   }
 }
+
+
+/* ------------------------------------------------------------------------- */
+/* Blog */
+
+
+.blog {
+  margin-top: 40px;
+}
+
+.blog-container {
+  background-color: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.blog-container img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.blog-container a {
+  text-decoration: none;
+}
+
+.blog-title {
+  font-size: 18px;
+  font-weight: bold;
+}
