@@ -316,8 +316,7 @@ h3 {
       padding: 0 10px; 
       grid-gap: 5px;
   }
-  
-  }
+}
 
 
 @media (max-width: 380px) {
@@ -373,3 +372,26 @@ h3 {
   font-size: 18px;
   font-weight: bold;
 }
+
+
+/* --------------MAP---------------- */
+iframe {
+  width: 800px;
+  height: 480px;
+}
+
+@media (max-width: 800px) {
+  iframe {
+    width: 550px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 550px) {
+  iframe {
+    width: 350px;
+    height: 300px;
+  }
+}
+
+  
