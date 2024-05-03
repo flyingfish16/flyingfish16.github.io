@@ -394,4 +394,26 @@ iframe {
   }
 }
 
-  
+
+/* ------------------------------------------------------------------------- */
+/* Japan */
+
+#header-text-japan h1 {
+  font-family: "Zen Kurenaido", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 52px;
+  /* letter-spacing: 2px; */
+  color: #333333;
+}
+#header-text-japan p {
+  font-family: "Zen Kurenaido", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  /* letter-spacing: 2px; */
+  color: #333333;
+  @media (max-width: 600px) {
+    font-size: 14px;
+  }
+}
