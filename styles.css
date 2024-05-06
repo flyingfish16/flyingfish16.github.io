@@ -405,6 +405,9 @@ iframe {
   font-size: 52px;
   /* letter-spacing: 2px; */
   color: #333333;
+  @media (max-width: 600px) {
+    font-size: 28px;
+  }
 }
 #header-text-japan p {
   font-family: "Zen Kurenaido", sans-serif;
@@ -416,4 +419,8 @@ iframe {
   @media (max-width: 600px) {
     font-size: 14px;
   }
+}
+
+#japan-prefectures {
+  height: 750;
 }
